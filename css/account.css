@@ -304,8 +304,8 @@ body{
 
 .home img {
     margin-top: 10px;
-    width: 160px;
-    height: 40px;
+    width: 200px;
+    height: auto;
 }
 .home h1{
     color: #000000;
