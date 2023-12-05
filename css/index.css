@@ -272,6 +272,7 @@ body{
 .try h2{
     color: #000000;
     font-size: 1.7rem;
+    text-align: left;
 }
 .try h4{
     color: #000000;
@@ -845,7 +846,15 @@ body{
     border-radius: 45px; 
     margin: 10px auto; 
     margin-left: 20px;
-    margin-right: 20px
+    margin-right: 20px;
+}
+.rounded-box7 {
+    width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45px;
 }
 
 @media (max-width: 1200px) {
