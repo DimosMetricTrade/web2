@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        /* Style to hide all images by default */
+        .gallery-img {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HTML container for the image and buttons -->
+<div>
+    <!-- Image container -->
+    <img id="galleryImage" class="gallery-img" width="200px;" src="../images2/screenshots/pc/1.png" alt="Gallery Image">
+
+    <!-- Buttons to switch between images -->
+    <button onclick="showImage(1)">Show Image 1</button>
+    <button onclick="showImage(2)">Show Image 2</button>
+    <button onclick="showImage(3)">Show Image 3</button>
+</div>
+
+<script>
+    // JavaScript function to show the selected image
+    function showImage(imageNumber) {
+        // Hide all images
+        var images = document.getElementsByClassName("gallery-img");
+        for (var i = 0; i < images.length; i++) {
+            images[i].style.display = "none";
+        }
+
+        // Show the selected image
+        var selectedImage = document.getElementById("galleryImage");
+        selectedImage.src = src="../images2/screenshots/pc/"+imageNumber+".png";  // Replace with your image paths
+        selectedImage.style.display = "block";
+    }
+
+    // Show the first image by default when the page loads
+    showImage(1);
+</script>
+</body>
+</html>

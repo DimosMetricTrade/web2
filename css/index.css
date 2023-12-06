@@ -36,11 +36,6 @@ body{
     border-left: .4rem solid #000000;
 }
 
-.faq .heading::before, .faq .heading::after{
-    border-top: .4rem solid #000000;
-    border-left: .4rem solid #000000;
-}
-
 .heading::before, .clients .section-header h2::before, .section-head h1::before, .testimonials .section-header h2::before, .section-head-1 h4::before{
     top: 5.8rem;
     left: -2rem;
@@ -149,11 +144,13 @@ body{
     width: 100px;
     align-items: center;
     margin-right: 500px;
+    pointer-events: none;
 }
 .home img.second-image {
     width: 300px;
     align-items: center;
     margin-right:100px;
+    pointer-events: none;
 }
 
 .home h1{
@@ -174,7 +171,7 @@ body{
     color: #fff;
     font-size: 1.7rem;
     text-align: center;
-    margin-top:100px;
+    margin-top:50px;
     margin-right:100px;
 }
 
@@ -201,7 +198,7 @@ body{
     left: 0;
     height: 11rem;
     width: 100%;
-    background: url(../images/wave.png);
+    background: url(../images2/wave.png);
     background-size: 100rem 11rem;
     animation: waves 8s linear infinite;
     background-repeat: repeat-x;
@@ -233,7 +230,7 @@ body{
     left: 0;
     height: 11rem;
     width: 100%;
-    background: url(../images/wave2.png);
+    background: url(../images2/wave2.png);
     background-size: 100rem 11rem;
     animation: waves 8s linear infinite;
     background-repeat: repeat-x;
@@ -302,6 +299,23 @@ body{
     color: #333;
     padding: 1rem 0;
 }
+
+.custom-image-container {
+position: relative;
+display: inline-block;
+}
+
+.overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: transparent;
+pointer-events: none; /* Allow clicks to pass through */
+z-index: 1; /* Ensure the overlay is on top */
+}
+
 .pt-5 .container .row .section-head p{
     font-size: 2rem;
     color: #333;
@@ -570,7 +584,7 @@ body{
 .clients2{
     text-align: center;
     align-items: center;
-    background-image: url(../images2/skyscrappers.png);
+    background-image: url(../images2/sky.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -607,74 +621,6 @@ body{
     .clients2 img {
         max-width: 100px;
     padding: 10px 10px 10px 10px;
-    }
-}
-
-.testimonials {
-    position: relative;
-    padding: 90px 0 60px 0;
-    background: #f2f2f2;
-}
-
-.testimonials .testimonial-item {
-    position: relative;
-    margin: 0 15px 30px 15px;
-    background: #ffffff;
-}
-
-.testimonials .testimonial-img {
-    position: relative;
-    background: #000000;
-    overflow: hidden;
-}
-
-.testimonials .testimonial-text {
-    position: relative;
-    width: 100%;
-    padding: 30px 15px;
-    text-align: center;
-    background: #ffffff;
-}
-
-.testimonials .testimonial-text h3 {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.testimonials .testimonial-text h4 {
-    font-size: 12px;
-    font-weight: 300;
-}
-
-.testimonials .testimonial-text p {
-    margin: 0;
-    font-size: 16px;
-    font-weight: 300;
-}
-
-.testimonials .owl-nav,
-.testimonials .owl-dots {
-    margin-top: 5px;
-    text-align: center;
-}
-
-.testimonials .owl-dot {
-    display: inline-block;
-    margin: 0 5px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #dddddd;
-}
-
-.testimonials .owl-dot.active {
-    background-color: #4F84C4;
-}
-
-@media (max-width: 1000px) {
-    .testimonials .testimonial-text {
-        padding: 25px;
     }
 }
 /* Style for the image container */
@@ -742,7 +688,7 @@ body{
 }
 
 .pricelist h4 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     text-align: center;
     color: black;
 }
@@ -755,6 +701,29 @@ body{
     text-align: left;
     color: black;
 }
+
+.gallery-img {
+    display: none;
+    max-width: 1500px; /* Add this line to set a maximum width for the image */
+    height: auto; /* This ensures the aspect ratio is maintained */
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
 .aligned-heading {
     font-size: 1.7rem;
     color: white;
@@ -856,6 +825,14 @@ body{
     align-items: center;
     border-radius: 45px;
 }
+.rounded-box8 {
+    width: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45px;
+}
 
 @media (max-width: 1200px) {
     .rounded-box {
@@ -880,6 +857,15 @@ body{
         width: 350px;
         text-align: left;
     }
+    .rounded-box8 {
+        width: 400px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 45px;
+    }
+    
 }
 
 .map{
@@ -1405,19 +1391,5 @@ body{
             width: 30px;
             height: 30px;
             font-size: 30px;
-        }
-
-        .faq{
-            padding: 0;
-            min-height: 60vh;
-        }
-    
-        .faq .row{
-            padding: 0 1.5rem;
-            flex-flow: column;
-        }
-    
-        .faq .row .accordion-container{
-            width: 100%;
         }
 }

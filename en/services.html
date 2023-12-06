@@ -1,5 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get all image elements
+      var images = document.querySelectorAll('img');
+
+      // Disable right-click on all images
+      images.forEach(function(image) {
+        image.addEventListener('contextmenu', function(event) {
+          event.preventDefault();
+        });
+      });
+    });
+</script>
+
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="../images2/favicon/empty.png" type="image/gif">
@@ -22,7 +37,7 @@
 </head>
 <body>
     <header class="header">
-        <a href="../en/index.html" class="logo"><img src="../images2/logo2.png" alt=""></a>
+        <a href="../en/index.html" class="logo"><img src="../images2/logo2.png" alt="" draggable="false"></a>
         <div class="fas fa-bars"></div>
         <nav class="navbar">
             <ul>
@@ -37,7 +52,7 @@
     </header>
     <section id="home" class="home">
         <div class="image-with-text-container">
-            <img src="../images2/connections.png" alt="Fixed Image" class="fixed-image">
+            <img src="../images2/connections.png" alt="Fixed Image" class="fixed-image" draggable="false">
             <div class="text-container">
                 <h5>Trading Solutions</h5>
                 <p>Providing solutions for trading systems is one of the main activities of MetricTrade.<br>
@@ -65,7 +80,7 @@
                     Connections to other systems can be easily deployed depending of our customers needs.<br>
                 </p>
             </div>
-            <img src="../images2/FIX.png" alt="Fixed Image" class="fixed-image">
+            <img src="../images2/FIX.png" alt="Fixed Image" class="fixed-image" draggable="false">
         </div>
     <div class="wave wave1"></div>
     <div class="wave wave2"></div>
@@ -85,6 +100,5 @@
         © 2001-2023 MetricTrade Ltd. All rights reserved. MetricTrade and ZTrade are registered trademarks of MetricTrade LTD.
     </p>
 </div>
-<a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
 </body>
 </html>

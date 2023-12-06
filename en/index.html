@@ -1,5 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get all image elements
+      var images = document.querySelectorAll('img');
+
+      // Disable right-click on all images
+      images.forEach(function(image) {
+        image.addEventListener('contextmenu', function(event) {
+          event.preventDefault();
+        });
+      });
+    });
+</script>
+  
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="../images2/favicon/empty.png" type="image/gif">
@@ -22,7 +37,7 @@
 </head>
 <body>
     <header class="header">
-        <a href="../en/index.html" class="logo"><img src="../images2/logo2.png" alt=""></a>
+        <a href="../en/index.html" class="logo"><img src="../images2/logo2.png" alt=""  draggable="false"></a>
         <div class="fas fa-bars"></div>
         <nav class="navbar">
             <ul>
@@ -39,7 +54,7 @@
   <section id="home" class="home">
         <div class="rounded-box-all2">
             <div class="rounded-box5">
-                <img src="../images2/ztrade.png" alt="ZTrade logo">
+                <img src="../images2/ztrade.png" alt="ZTrade logo"  draggable="false">
                 <div class="aligned-heading">
                         ZTrade is a cross-platform trading application targeting the Athens and Cyprus Exchanges, for professional and private investor needs.<br><br> 
                         For more than 20 years it has been and remains the most popular stock exchange application in Greece and Cyprus, thanks to the possibilities of stocks analysis, 
@@ -56,14 +71,15 @@
             <div class="rounded-box6">
                 <h3 id="textToRotate" class="rotating-text">Athens and Cyprus</h3>
                 <br>
-                <img id="imageToRotate" class="second-image" src="../images2/screenshots/1.png" alt="Screenshot">
+                <img id="imageToRotate" class="second-image" src="../images2/screenshots/iphone/1.png" alt="Screenshot"  draggable="false">
+                    
                 <script>
                     const imagePaths = [
-                        "../images2/screenshots/1.png",
-                        "../images2/screenshots/2.png",
-                        "../images2/screenshots/3.png",
-                        "../images2/screenshots/4.png",
-                        "../images2/screenshots/5.png"
+                        "../images2/screenshots/iphone/1.png",
+                        "../images2/screenshots/iphone/2.png",
+                        "../images2/screenshots/iphone/3.png",
+                        "../images2/screenshots/iphone/4.png",
+                        "../images2/screenshots/iphone/5.png"
                     ];
                     const textContent = [
                         'Athens and Cyprus',
@@ -96,60 +112,74 @@
   <section id="try" class="try">
     <div class="row">
         <div class="content">
-            <h4>Try ZTrade</h4><br>
-            <div class="rounded-box7"><h2>ZTrade is a multi-platform application, you can use the Desktop and Mobile<br> version or only one of them.<br>
-                For the best user experience, MetricTrade suggests<br> using both a Desktop and a Mobile version of the app.<br><br>
+            <h4>ZTrade</h4><br>
+            <!--
+            <img style="width:1500px;height: auto;margin-bottom: 20px;border-radius: 10px;" src="../images2/screenshots/pc/1.png"  draggable="false">
+            -->
+
+            <div>
+                <img class="gallery-img" id="galleryImage" src="../images2/screenshots/pc/1.png" alt="Gallery Image">
+                <button class="button" onclick="showImage(1)">Show Image 1</button>
+                <button class="button" onclick="showImage(2)">Show Image 2</button>
+                <button class="button" onclick="showImage(3)">Show Image 3</button>
+            </div>
+
+            <script>
+                function showImage(imageNumber) {
+                    var images = document.getElementsByClassName("gallery-img");
+                    for (var i = 0; i < images.length; i++) {
+                        images[i].style.display = "none";
+                    }
+                    var selectedImage = document.getElementById("galleryImage");
+                    selectedImage.src = src="../images2/screenshots/pc/"+imageNumber+".png";
+                    selectedImage.style.display = "block";
+                }
+                showImage(1);
+            </script>
+            <br>
+            <div class="rounded-box8"><h2>ZTrade is a multi-platform application, you can download it for Windows, Mac , iPhone, iPad and all the Android devices.<br><br>
+                If your personal computer is running a previous version that doesn't support Microsoft Store or Mac App Store you can run ZTrade using Java.<br><br>
+                For more information and detailed instructions please visit our <a href="../en/install.html">install</a> page.<br><br>
+            </h2></div>
+
+            <h3>Key Features</h3><br>
+            <div class="rounded-box8"><h2>
+                <b>Security</b> - Transforming the Landscape of Security and Reliability in Trading Apps.
+                ZTrade introduces a paradigm shift in how we perceive the security and dependability of trading applications.
+                It is distributed only after undergoing meticulous scrutiny and approval processes by major operating system entities like Microsoft, Apple, and Google. 
+                The application operates securely within a designated sandbox, allowing access solely to predefined resources such as initiating an internet client connection.
+
+                <b>Universal</b> - An uniform application with consistent features and usage applicable across all desktops, phones, and tablets.<br>
+
+                <b>Unlimited</b> - Unlimited custom and market sector watchlists along with most active, unusual volume and other activity lists.<br>
+
+                <b>Charts</b> - Technical analysis with 50+ indicators, drawing features and glance view with up to 4 stocks on one chart.<br>
+
+                <b>Fundamentals</b> - Fundamental data with graphical representation.<br>
+
+                <b>Heat Maps</b> - Heat Maps on Day, Week, Month and YTD Changes, Dividends, P/E etc on major indices components and user watch lists.<br><br>
             </h2></div>
             
-            <h3>Download the App by selecting your device/devices:</h3><br>
+
+
+            
+            <h3>Install the App by selecting your device/devices:</h3><br>
             <h3>Windows 11 / 10</h3>
-            <div class="rounded-box7"><h2>
-                Please <a href="https://apps.microsoft.com/detail/ztrade-plus/9P7R15NSPZ5P?hl=el-gr&gl=GR&rtc=1&activetab=pivot:overviewtab&SilentAuth=1&wa=wsignin1.0" target="_blank">click here</a>
-                to get the application from the Microsoft Store<br> and pin it to the taskbar.<br>
-                You can launch the application by clicking its icon or by searching "ZTrade Plus".<br><br>
-            </h2></div>
             <a href="ms-windows-store://pdp/?ProductId=9P7R15NSPZ5P" target="Microsoft Store">
-                <img style="width:200px;height: auto;margin-bottom: 30px;" src="../images2/stores/ms.png" alt="Microsoft Store">
+                <img style="width:200px;height: auto;margin-bottom: 20px;margin-top: 20px;" src="../images2/stores/ms.png" alt="Microsoft Store"  draggable="false">
             </a>
-            <h3>MacOS - 10.15 or later</h3>
-            <div class="rounded-box7"><h2>
-                Please <a href="https://apps.apple.com/us/app/ztrade-plus/id786146883" target="_blank">click here</a> to get it from the Mac App Store.<br>
-                Or from the Mac App Store application on your device, search "ZTrade Plus" and install it.<br>
-                Open the Application by clicking on its icon in your device application list.<br><br>
-            </h2></div>
+            <h3>macOS - 10.15 or later</h3>
             <a href="https://apps.apple.com/us/app/ztrade-plus/id786146883" target="App Store">
-                <img style="width:250px;height: auto;margin-bottom: 30px" src="../images2/stores/mc.png" alt="Mac App Store">
+                <img style="width:250px;height: auto;margin-bottom: 20px;margin-top: 20px;" src="../images2/stores/mc.png" alt="Mac App Store"  draggable="false">
             </a>
 
             <h3>iOS - iPhone / iPad</h3>
-            <div class="rounded-box7"><h2>
-                Please <a href="https://apps.apple.com/us/app/ztrade-plus/id786146883" target="_blank">click here</a> to get it from the App Store.<br>
-                Or from the App Store application on your device, search "ZTrade Plus" and install it.<br>
-                Open the Application by clicking on its icon in your device application list.<br><br>
-            </h2></div>
             <a href="https://apps.apple.com/us/app/ztrade-plus/id786146883" target="App Store">
-                <img style="width:200px;height: auto;margin-bottom: 30px" src="../images2/stores/ap.png" alt="App Store">
+                <img style="width:200px;height: auto;margin-bottom: 20px;margin-top: 20px;" src="../images2/stores/ap.png" alt="App Store"  draggable="false">
             </a>
             <h3>Android- Phone / Tablet</h3>
-            <div class="rounded-box7"><h2>
-                Please <a href="https://play.google.com/store/apps/details?id=com.metrictrade.t.zt&pli=1" target="_blank">click here</a> to get it from the Google Store.<br>
-                Or from the Play Store application on your device, search "ZTrade Plus" and install it.<br>
-                Open the Application by clicking on its icon in your device application list.<br><br>
-            </h2></div>
             <a href="https://play.google.com/store/apps/details?id=com.metrictrade.t.zt&pli=1" target="Google Store">
-                <img style="width:200px;height: auto;margin-bottom: 30px" src="../images2/stores/gp.png" alt="Google Store">
-            </a>
-            <h3>Windows 8/7/XP/Vista</h3>
-            <div class="rounded-box7"><h2>
-                Microsoft Store is not available on Windows 8, 7, XP and Vista.<br> The ZTrade application can also run on your computer using Java.<br>
-                To run ZTrade on Windows using Java follow the below steps:<br>
-                1. If you haven't installed Java on your PC download it from here <a href="https://www.java.com/">https://www.java.com/ </a><br>
-                2. Download ZTrade from  <a href="https://metrictrade.com/plus/zplus.jnlp" target="Java ZTrade">here </a> <br>
-                3. If you are using Chrome click <emp>Keep</emp> in the file confirmation messages and then click on the <emp>zplusi.jnlp</emp> file.<br>
-                4. Right -click the file and then select <emp>Open</emp> from the context menu.<br>
-            </h2></div>
-            <a href="https://play.google.com/store/apps/details?id=com.metrictrade.t.zt&pli=1" target="Java ZTrade">
-                <img style="width:200px;height: auto;margin-bottom: 30px" src="../images2/stores/java.png" alt="Java ZTrade">
+                <img style="width:200px;height: auto;margin-bottom: 20px;margin-top: 20px;" src="../images2/stores/gp.png" alt="Google Store"  draggable="false">
             </a>
         </div>
     </div>
@@ -189,22 +219,22 @@
 
 <div class="clients2">
     <h3>Clients</h3>
-    <img src="../images2/clients/alpha-modified.png" alt="alpha logo">
-    <img src="../images2/clients/axon-modified.png" alt="axon logo">
-    <img src="../images2/clients/beta-modified.png" alt="beta logo">
-    <img src="../images2/clients/cyclos-modified.png" alt="cyclos logo"><br>
-    <img src="../images2/clients/depolas.png" alt="depolas logo">
-    <img src="../images2/clients/eurocorp-modified.png" alt="eurocorp logo">
-    <img src="../images2/clients/eurotrust-modified.png" alt="eurotrust logo">
-    <img src="../images2/clients/euroxx-modified.png" alt="euroxx logo"><br>
-    <img src="../images2/clients/hellenic-modified.png" alt="hellenic logo">
-    <img src="../images2/clients/mavrikis-modified.png" alt="mavrikis logo">
-    <img src="../images2/clients/merit-modified.png" alt="merit logo">
-    <img src="../images2/clients/nbg-modified.png" alt="nbg logo"><br>
-    <img src="../images2/clients/prelium-modified.png" alt="prelium logo">
-    <img src="../images2/clients/optima-modified.png" alt="optima logo">
-    <img src="../images2/clients/sarris-modified.png" alt="sarris logo">
-    <img src="../images2/clients/solidus-modified.png" alt="solidus logo">
+    <img src="../images2/clients/alpha-modified.png" alt="alpha logo" draggable="false">
+    <img src="../images2/clients/axon-modified.png" alt="axon logo" draggable="false">
+    <img src="../images2/clients/beta-modified.png" alt="beta logo" draggable="false">
+    <img src="../images2/clients/cyclos-modified.png" alt="cyclos logo" draggable="false"><br>
+    <img src="../images2/clients/depolas.png" alt="depolas logo" draggable="false">
+    <img src="../images2/clients/eurocorp-modified.png" alt="eurocorp logo" draggable="false">
+    <img src="../images2/clients/eurotrust-modified.png" alt="eurotrust logo" draggable="false">
+    <img src="../images2/clients/euroxx-modified.png" alt="euroxx logo" draggable="false"><br>
+    <img src="../images2/clients/hellenic-modified.png" alt="hellenic logo" draggable="false">
+    <img src="../images2/clients/mavrikis-modified.png" alt="mavrikis logo" draggable="false">
+    <img src="../images2/clients/merit-modified.png" alt="merit logo" draggable="false">
+    <img src="../images2/clients/nbg-modified.png" alt="nbg logo" draggable="false"><br>
+    <img src="../images2/clients/prelium-modified.png" alt="prelium logo" draggable="false">
+    <img src="../images2/clients/optima-modified.png" alt="optima logo" draggable="false">
+    <img src="../images2/clients/sarris-modified.png" alt="sarris logo" draggable="false">
+    <img src="../images2/clients/solidus-modified.png" alt="solidus logo" draggable="false">
 </div>
 
 <div class="pricelist">
@@ -214,7 +244,7 @@
     <div class="rounded-box-all">
         <div class="rounded-box3">
             <div class="aligned-heading">
-                <h4><b>Ztrade Plus</b><br>
+                <h4 style="font-size: 2rem;"><b>Ztrade Plus</b><br>
                     Cross-platform application with Desktop and Phone Application with <b>multiple</b> windows on <b>multiple</b> devices<br><br>
                     <b>10€</b>
                 </h4>
@@ -222,7 +252,7 @@
         </div>
         <div class="rounded-box4">
             <div class="aligned-heading">
-                <h4><b>Ztrade One</b><br>
+                <h4 style="font-size: 2rem;"><b>Ztrade One</b><br>
                     Cross-platform application with Desktop and Phone Application with only <b>2</b> active windows<br><br>
                     <b>6€</b>
                 </h4>

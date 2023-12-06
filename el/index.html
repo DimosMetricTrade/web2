@@ -1,5 +1,20 @@
 <!DOCTYPE html>
-<html lang="el">
+<html lang="en">
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get all image elements
+      var images = document.querySelectorAll('img');
+
+      // Disable right-click on all images
+      images.forEach(function(image) {
+        image.addEventListener('contextmenu', function(event) {
+          event.preventDefault();
+        });
+      });
+    });
+</script>
+  
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="../images2/favicon/empty.png" type="image/gif">
@@ -39,7 +54,7 @@
   <section id="home" class="home">
         <div class="rounded-box-all2">
             <div class="rounded-box5">
-                <img src="../images2/ztrade.png" alt="ZTrade logo">
+                <img src="../images2/ztrade.png" alt="ZTrade logo" draggable="false">
                 <div class="aligned-heading">
                     Το ZTrade είναι μια πολυπλατφορμική εφαρμογή συναλλαγών που δραστηροποιήται στο Χρηματιστήριο Αθηνών και Χρηματιστήριο Κύπρου για προσωπικές ή επαγγελματικές ανάγκες.<br><br> 
                     Για πάνω από 20 χρόνια είναι κια παραμένει η πιο δημοφιλής πλατφόρμα συναλλαγών μετοχών στην Ελλάδα και στην Κύπρο, χάρις στις δυνατότητες ανάλυσεις μετοχών, την ακρίβεια, 
@@ -52,19 +67,20 @@
                     Η εφαρμογή ZTrade Plus λειτουργεί με μηνιαία συνδρομή με επιλογή πολλών πακέτων που καλύπτουν όλες τις ανάγκες, παρακαλώ ενημερωθείται από τον τιμοκατάλογο μας.<br><br>
                     Οι νέοι χρήστες μπορούν να κατεβάσουν την εφαρμογή και να επιλέξουν την ΔΩΡΕΑΝ δοκιμαστική χρήση για 15 ημέρες.<br><br>
                     <br><br><br>
-                </div>
+                    </div>
             </div>
             <div class="rounded-box6">
                 <h3 id="textToRotate" class="rotating-text">Athens and Cyprus</h3>
                 <br>
-                <img id="imageToRotate" class="second-image" src="../images2/screenshots/1.png" alt="Screenshot">
+                <img id="imageToRotate" class="second-image" src="../images2/screenshots/iphone/1.png" alt="Screenshot"  draggable="false">
+                    
                 <script>
                     const imagePaths = [
-                        "../images2/screenshots/1.png",
-                        "../images2/screenshots/2.png",
-                        "../images2/screenshots/3.png",
-                        "../images2/screenshots/4.png",
-                        "../images2/screenshots/5.png"
+                        "../images2/screenshots/iphone/1.png",
+                        "../images2/screenshots/iphone/2.png",
+                        "../images2/screenshots/iphone/3.png",
+                        "../images2/screenshots/iphone/4.png",
+                        "../images2/screenshots/iphone/5.png"
                     ];
                     const textContent = [
                         'Athens and Cyprus',
@@ -97,52 +113,40 @@
   <section id="try" class="try">
     <div class="row">
         <div class="content">
-            <h4>Δοκιμάστε το ZTrade</h4><br>
-            <h2>Το ZTrade είναι μια εφαρμογή για πολλαπλές πλατφόρμες, μπορείται να <br>χρησιμοποιήσεται την εκδόση για προσωπικό υπολιγστή και για κινητό <br> τηλέφωνο είτε μόνο μια από τις δύο.<br>
-                Για την καλύτερη εμπειρία, η MetricTrade προτείνει<br>την χρήση και σε προσωπικό υπολιγστή και σε κινητό τηλέφωνο.<br><br>
-            </h2>
+            <h4>ZTrade</h4><br>
+            <img style="width:1500px;height: auto;margin-bottom: 20px;margin-top: 20px;border-radius: 10px;" src="../images2/pc_screen2.png"  draggable="false">
+            
+            <div class="rounded-box7"><h2>
+                
+                Το ZTrade είναι μια εφαρμογή για πολλαπλές πλατφόρμες, μπορείται να την χρησιμοποιήσεταιWindows, Mac , iPhone, iPad και όλες τις Android συσκευές.<br>
+                Άμα ο προσωπικός σας υπολιγστής τρέχει σε μια παλαιότερη εκδόση που δεν υποστηρίζει Microsoft Store ή Mac App Store τότε μπορείται να τρέξετε το ZTrade με την χρήση Java.<br>
+                Για περισσότερες πληροφορίες επισκεφτείται την σελίδα <a href="../en/install.html">εγκατάστασης</a>.<br><br>
+
+            </h2></div>
+            
             <h3>Κατεβάστε την εφαρμογή επιλέγοντας την συσκευή/ες σας:</h3><br>
             <h3>Windows 11 / 10</h3>
-            <h2>
-                Παρακαλώ κάντε <a href="https://apps.microsoft.com/detail/ztrade-plus/9P7R15NSPZ5P?hl=el-gr&gl=GR&rtc=1&activetab=pivot:overviewtab&SilentAuth=1&wa=wsignin1.0" target="_blank">κλικ εδώ</a> για να κατεβάσετε την εφαρμογή από το Microsoft Store<br> και καρφιτσώστε την στην επιφάνεια εργασίας.<br>
-                Ανοιξτέ την εφαρμογή κάνοντας κλικ στο εικονίδιο της από την λίστα εφαρμογών σας ή ψάχνοντας "ZTrade Plus".<br><br>
-            </h2>
             <a href="ms-windows-store://pdp/?ProductId=9P7R15NSPZ5P" target="Microsoft Store">
-                <img style="width:200px;height: auto;margin-bottom: 30px;" src="../images2/stores/ms_gr.png" alt="Microsoft Store">
+                <img style="width:200px;height: auto;margin-bottom: 20px;margin-top: 20px;" src="../images2/stores/ms.png" alt="Microsoft Store"  draggable="false">
             </a>
-            <h3>MacOS - 10.15 ή νεότερο</h3>
-            <h2>
-                Παρακαλώ κάντε <a href="https://apps.apple.com/us/app/ztrade-plus/id786146883" target="_blank">κλικ εδώ</a> για να κατεβάσετε την εφαρμογή από το App Store.<br>
-                Ή από την εφαρμογή App Store στην συσκευή σας, ψάξτε "ZTrade Plus" και εγκαταστήστε το.<br>
-                Ανοιξτέ την εφαρμογή κάνοντας κλικ στο εικονίδιο της από την λίστα εφαρμογών σας.<br><br>
-            </h2>
+            <h3>macOS - 10.15 or later</h3>
             <a href="https://apps.apple.com/us/app/ztrade-plus/id786146883" target="App Store">
-                <img style="width:250px;height: auto;margin-bottom: 30px" src="../images2/stores/mc_gr.png" alt="Mac App Store">
+                <img style="width:250px;height: auto;margin-bottom: 20px;margin-top: 20px;" src="../images2/stores/mc.png" alt="Mac App Store"  draggable="false">
             </a>
 
             <h3>iOS - iPhone / iPad</h3>
-            <h2>
-                Παρακαλώ κάντε <a href="https://apps.apple.com/us/app/ztrade-plus/id786146883" target="_blank">κλικ εδώ</a> για να κατεβάσετε την εφαρμογή από το App Store.<br>
-                Ή από την εφαρμογή App Store στην συσκευή σας, ψάξτε "ZTrade Plus" και εγκαταστήστε το.<br>
-                Ανοιξτέ την εφαρμογή κάνοντας κλικ στο εικονίδιο της από την λίστα εφαρμογών σας.<br><br>
-            </h2>
             <a href="https://apps.apple.com/us/app/ztrade-plus/id786146883" target="App Store">
-                <img style="width:200px;height: auto;margin-bottom: 30px" src="../images2/stores/ap_gr.png" alt="App Store">
+                <img style="width:200px;height: auto;margin-bottom: 20px;margin-top: 20px;" src="../images2/stores/ap.png" alt="App Store"  draggable="false">
             </a>
             <h3>Android- Phone / Tablet</h3>
-            <h2>
-                Παρακαλώ κάντε <a href="https://play.google.com/store/apps/details?id=com.metrictrade.t.zt&pli=1" target="_blank">κλικ εδώ</a> για να κατεβάσετε την εφαρμογή από το Google Play.<br>
-                Ή από την εφαρμογή Google Play στην συσκευή σας, ψάξτε "ZTrade Plus" και εγκαταστήστε το.<br>
-                Ανοιξτέ την εφαρμογή κάνοντας κλικ στο εικονίδιο της από την λίστα εφαρμογών σας.<br><br>
-            </h2>
             <a href="https://play.google.com/store/apps/details?id=com.metrictrade.t.zt&pli=1" target="Google Store">
-                <img style="width:200px;height: auto;margin-bottom: 30px" src="../images2/stores/gp_gr.png" alt="Google Store">
+                <img style="width:200px;height: auto;margin-bottom: 20px;margin-top: 20px;" src="../images2/stores/gp.png" alt="Google Store"  draggable="false">
             </a>
         </div>
     </div>
   </section>
 
-<div class="aboutus">
+  <div class="aboutus">
     <h3>Σχετικά με εμάς</h3>
     <div class="columns">
         <div class="column">
@@ -170,6 +174,7 @@
     </div>
 </div>
 
+
 <div class="longterm">
     <h3>Σχέσεις Διαρκείας</h3>
     <p>Για πάνω από 20 χρόνια που προσφέρουμε τις υπηρεσίες μας κανένας από τους εταιρικούς μας πελάτες δεν έχει αντικαταστήσει το σύστημα μας με ανταγωνιστικό προϊόν<br>
@@ -179,22 +184,22 @@
 
 <div class="clients2">
     <h3>Πελάτες</h3>
-    <img src="../images2/clients/nbg-modified.png" alt="nbg logo">
-    <img src="../images2/clients/alpha-modified.png" alt="alpha logo">
-    <img src="../images2/clients/optima-modified.png" alt="optima logo">
-    <img src="../images2/clients/depolas.png" alt="depolas logo"><br>
-    <img src="../images2/clients/cyclos-modified.png" alt="cyclos logo">
-    <img src="../images2/clients/beta-modified.png" alt="beta logo">
-    <img src="../images2/clients/eurocorp-modified.png" alt="eurocorp logo">
-    <img src="../images2/clients/eurotrust-modified.png" alt="eurotrust logo"><br>
-    <img src="../images2/clients/euroxx-modified.png" alt="euroxx logo">
-    <img src="../images2/clients/hellenic-modified.png" alt="hellenic logo">
-    <img src="../images2/clients/mavrikis-modified.png" alt="mavrikis logo">
-    <img src="../images2/clients/merit-modified.png" alt="merit logo"><br>
-    <img src="../images2/clients/axon-modified.png" alt="axon logo">
-    <img src="../images2/clients/prelium-modified.png" alt="prelium logo">
-    <img src="../images2/clients/sarris-modified.png" alt="sarris logo">
-    <img src="../images2/clients/solidus-modified.png" alt="solidus logo">
+    <img src="../images2/clients/alpha-modified.png" alt="alpha logo" draggable="false">
+    <img src="../images2/clients/axon-modified.png" alt="axon logo" draggable="false">
+    <img src="../images2/clients/beta-modified.png" alt="beta logo" draggable="false">
+    <img src="../images2/clients/cyclos-modified.png" alt="cyclos logo" draggable="false"><br>
+    <img src="../images2/clients/depolas.png" alt="depolas logo" draggable="false">
+    <img src="../images2/clients/eurocorp-modified.png" alt="eurocorp logo" draggable="false">
+    <img src="../images2/clients/eurotrust-modified.png" alt="eurotrust logo" draggable="false">
+    <img src="../images2/clients/euroxx-modified.png" alt="euroxx logo" draggable="false"><br>
+    <img src="../images2/clients/hellenic-modified.png" alt="hellenic logo" draggable="false">
+    <img src="../images2/clients/mavrikis-modified.png" alt="mavrikis logo" draggable="false">
+    <img src="../images2/clients/merit-modified.png" alt="merit logo" draggable="false">
+    <img src="../images2/clients/nbg-modified.png" alt="nbg logo" draggable="false"><br>
+    <img src="../images2/clients/prelium-modified.png" alt="prelium logo" draggable="false">
+    <img src="../images2/clients/optima-modified.png" alt="optima logo" draggable="false">
+    <img src="../images2/clients/sarris-modified.png" alt="sarris logo" draggable="false">
+    <img src="../images2/clients/solidus-modified.png" alt="solidus logo" draggable="false">
 </div>
 
 <div class="pricelist">
@@ -204,7 +209,7 @@
     <div class="rounded-box-all">
         <div class="rounded-box3">
             <div class="aligned-heading">
-                <h4><b>Ztrade Plus</b><br>
+                <h4 style="font-size: 2rem;"><b>Ztrade Plus</b><br>
                     Εφαρμογή για Υπολογιστές και Κινητά με <b>πολλαπλά</b> παράθυρα για <b>πολλαπλές</b> συσκευές.<br><br>
                     <b>10€</b>
                 </h4>
@@ -212,7 +217,7 @@
         </div>
         <div class="rounded-box4">
             <div class="aligned-heading">
-                <h4><b>Ztrade One</b><br>
+                <h4 style="font-size: 2rem;"><b>Ztrade One</b><br>
                     Εφαρμογή για Υπολογιστές και Κινητά με <b>2</b> ενεργά παράθυρα για όλες τις συσκευές.<br><br>
                     <b>6€</b>
                 </h4>
