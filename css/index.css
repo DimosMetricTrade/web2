@@ -365,15 +365,6 @@ z-index: 1; /* Ensure the overlay is on top */
     -webkit-transition:all 0.5s ease 0s;
     transition:all 0.5s ease 0s;
   }
-  .item .icon{
-    font-size:40px;
-    margin-bottom: 25px;
-    color:yellow;
-    width:90px;
-    height:90px;
-    line-height: 96px;
-    border-radius: 50px;
-  }
   .item .feature_box_col_one{
     background:rgba(247,198,5,0.2);
     color:#52ab98;
@@ -450,15 +441,6 @@ z-index: 1; /* Ensure the overlay is on top */
     color:#2b6777;
     -webkit-transition:all 0.5s ease 0s;
     transition:all 0.5s ease 0s;
-  }
-  .item .icon{
-    font-size:40px;
-    margin-bottom: 25px;
-    color:yellow;
-    width:90px;
-    height:90px;
-    line-height: 96px;
-    border-radius: 50px;
   }
   .item .feature_box_col_one{
     background:rgba(247,198,5,0.2);
@@ -703,25 +685,26 @@ z-index: 1; /* Ensure the overlay is on top */
 }
 
 .gallery-img {
-    display: none;
-    max-width: 1500px; /* Add this line to set a maximum width for the image */
-    height: auto; /* This ensures the aspect ratio is maintained */
-    margin-bottom: 20px;
+    max-width: 1200px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 5px;
 }
 
 .button {
     padding: 10px;
     margin: 5px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
+    font-size: 1.7rem;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     cursor: pointer;
-    border-radius: 5px;
+    border: none !important;
+    outline: none !important;
 }
 
 .button:hover {
-    background-color: #45a049;
+    color: #5da2e6;
+    text-decoration: underline;
 }
 
 .aligned-heading {

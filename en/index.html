@@ -118,24 +118,26 @@
             -->
 
             <div>
-                <img class="gallery-img" id="galleryImage" src="../images2/screenshots/pc/1.png" alt="Gallery Image">
-                <button class="button" onclick="showImage(1)">Show Image 1</button>
-                <button class="button" onclick="showImage(2)">Show Image 2</button>
-                <button class="button" onclick="showImage(3)">Show Image 3</button>
+                <img id="galleryImage" class="gallery-img" src="../images2/screenshots/pc/1.png" alt="Gallery Image">
+                <br>
+                <button class="button" onclick="showImage(1)">Heatmaps</button>
+                <button class="button" onclick="showImage(2)">Graphs</button>
+                <button class="button" onclick="showImage(3)">Portfolio</button>
             </div>
 
             <script>
+                // JavaScript function to show the selected image with a transition
                 function showImage(imageNumber) {
-                    var images = document.getElementsByClassName("gallery-img");
-                    for (var i = 0; i < images.length; i++) {
-                        images[i].style.display = "none";
-                    }
+                    // Show the selected image
                     var selectedImage = document.getElementById("galleryImage");
-                    selectedImage.src = src="../images2/screenshots/pc/"+imageNumber+".png";
-                    selectedImage.style.display = "block";
+                    selectedImage.style.transform = "scale(0.8)";
+                    setTimeout(function () {
+                        selectedImage.src = "../images2/screenshots/pc/" + imageNumber + ".png";  // Replace with your image paths
+                        selectedImage.style.transform = "scale(1)";
+                    }, 250); // Adjust the delay (in milliseconds) based on your preference
                 }
-                showImage(1);
             </script>
+
             <br>
             <div class="rounded-box8"><h2>ZTrade is a multi-platform application, you can download it for Windows, Mac , iPhone, iPad and all the Android devices.<br><br>
                 If your personal computer is running a previous version that doesn't support Microsoft Store or Mac App Store you can run ZTrade using Java.<br><br>
