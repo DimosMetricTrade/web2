@@ -46,6 +46,7 @@
                 <li><a href="../el/services.html">Υπηρεσίες</a></li>
                 <li><a href="../el/company.html">Εταιρία</a></li>
                 <li><a href="../el/contact.html">Επικοινωνία</a></li>
+                <li><a href="../el/install.html">Εγκατάσταση</a></li>
                 <li><a href="../el/account.html">Συνδρομή</a></li>
             </ul>
         </nav>
@@ -70,7 +71,7 @@
                     </div>
             </div>
             <div class="rounded-box6">
-                <h3 id="textToRotate" class="rotating-text">Athens and Cyprus</h3>
+                <h3 id="textToRotate" class="rotating-text">Χρηματηστήριο Αθήνων και Κύπρου</h3>
                 <br>
                 <img id="imageToRotate" class="second-image" src="../images2/screenshots/iphone/1.png" alt="Screenshot"  draggable="false">
                     
@@ -83,11 +84,11 @@
                         "../images2/screenshots/iphone/5.png"
                     ];
                     const textContent = [
-                        'Athens and Cyprus',
-                        'View real-time prices ',
-                        'Create your graphs',
-                        'News updates',
-                        'Visual Information',
+                        'Χρηματηστήριο Αθήνων και Κύπρου',
+                        'Ζωντανή ενημέρωση τιμών',
+                        'Δημιουργία γραφημάτων',
+                        'Ενημερώσεις νέων',
+                        'Πληροφορίες μετοχών',
                     ];
                     const rotatingImage = document.getElementById('imageToRotate');
                     const rotatingText = document.getElementById('textToRotate');
@@ -114,14 +115,53 @@
     <div class="row">
         <div class="content">
             <h4>ZTrade</h4><br>
-            <img style="width:1500px;height: auto;margin-bottom: 20px;margin-top: 20px;border-radius: 10px;" src="../images2/pc_screen2.png"  draggable="false">
-            
-            <div class="rounded-box7"><h2>
-                
-                Το ZTrade είναι μια εφαρμογή για πολλαπλές πλατφόρμες, μπορείται να την χρησιμοποιήσεταιWindows, Mac , iPhone, iPad και όλες τις Android συσκευές.<br>
-                Άμα ο προσωπικός σας υπολιγστής τρέχει σε μια παλαιότερη εκδόση που δεν υποστηρίζει Microsoft Store ή Mac App Store τότε μπορείται να τρέξετε το ZTrade με την χρήση Java.<br>
-                Για περισσότερες πληροφορίες επισκεφτείται την σελίδα <a href="../en/install.html">εγκατάστασης</a>.<br><br>
+            <div>
+                <img id="galleryImage" class="gallery-img" src="../images2/screenshots/pc/1.png" alt="Gallery Image">
+                <br>
+                <button class="button" onclick="showImage(1)" style="text-decoration: underline;">Γενικά</button>
+                <button class="button" onclick="showImage(2)" style="text-decoration: underline;">Θερμικοί Χάρτες</button>
+                <button class="button" onclick="showImage(3)" style="text-decoration: underline;">Γραφήματα</button>
+                <button class="button" onclick="showImage(4)" style="text-decoration: underline;">Χαρτοφυλάκια</button>
+                <button class="button" onclick="showImage(5)" style="text-decoration: underline;">Εντολές</button>
+            </div>
 
+            <script>
+                // JavaScript function to show the selected image with a transition
+                function showImage(imageNumber) {
+                    // Show the selected image
+                    var selectedImage = document.getElementById("galleryImage");
+                    selectedImage.style.transform = "scale(0.8)";
+                    setTimeout(function () {
+                        selectedImage.src = "../images2/screenshots/pc/" + imageNumber + ".png"; 
+                        selectedImage.style.transform = "scale(1)";
+                    }, 250); // Adjust the delay (in milliseconds) based on your preference
+                }
+            </script>
+
+            <br>
+            <div class="rounded-box8"><h2>
+                Επιλέξτε το screenshot του ZTrade που θέλετε να δείτε κάνοντας κλικ στις <span style="text-decoration: underline;">υπογραμμισμένες</span> περιγραφές.<br><br>
+                Το ZTrade είναι μια εφαρμογή πολλαπλών πλατφορμών, μπορείτε να την κατεβάσετε για Windows, Mac, iPhone, iPad και όλες τις συσκευές Android.<br><br>
+                Εάν ο προσωπικός σας υπολογιστής λειτουργεί με προηγούμενη έκδοση που δεν υποστηρίζει το Microsoft Store ή το Mac App Store, μπορείτε να εκτελέσετε το ZTrade χρησιμοποιώντας Java.<br><br>
+                Για περισσότερες πληροφορίες και αναλυτικές οδηγίες παρακαλώ επισκεφτείται την σελίδα <a href="../el/install.html">εγκατάστασης</a>.<br><br>
+            </h2></div>
+
+            <h3>Κύρια χαρακτηριστικά</h3><br>
+            <div class="rounded-box8"><h2>
+                <b>Ασφάλεια</b> - Μεταμορφώνοντας το τοπίο της ασφάλειας και της αξιοπιστίας στις εφαρμογές συναλλαγών,
+                το ZTrade εισάγει μια αλλαγή νοοτροπίας στον τρόπο με τον οποίο αντιλαμβανόμαστε την ασφάλεια και την αξιοπιστία των εφαρμογών συναλλαγών.
+                 Διανέμεται μόνο αφού υποβληθεί σε σχολαστικό έλεγχο και διαδικασίες έγκρισης από μεγάλες εταιρίες λειτουργικού συστήματος όπως η Microsoft, η Apple και η Google.
+                 Η εφαρμογή λειτουργεί με ασφάλεια μέσα σε ένα καθορισμένο sandbox, επιτρέποντας την πρόσβαση αποκλειστικά σε προκαθορισμένους πόρους, όπως η εκκίνηση μιας σύνδεσης πελάτη Διαδικτύου.
+
+                 <b>Καθολικότητα</b> - Μια ομοιόμορφη εφαρμογή με συνεπή χαρακτηριστικά και χρήση που εφαρμόζεται σε όλους τους επιτραπέζιους υπολογιστές, τηλέφωνα και ταμπλέτες.<br>
+
+                 <b>Απεριόριστο</b> - Απεριόριστες λίστες παρακολούθησης προσαρμοσμένων και τομέων αγοράς μαζί με τις πιο ενεργές, ασυνήθιστες λίστες τόμων και άλλων δραστηριοτήτων.<br>
+
+                 <b>Διαγράμματα</b> - Τεχνική ανάλυση με 50+ δείκτες, χαρακτηριστικά σχεδίασης και ματιά με έως και 4 μετοχές σε ένα γράφημα.<br>
+
+                 <b>Βασικές αρχές</b> - Βασικά δεδομένα με γραφική αναπαράσταση.<br>
+
+                 <b>Χάρτες θερμότητας</b> - Χάρτες θερμότητας την ημέρα, την εβδομάδα, τον μήνα και τις ετήσιες αλλαγές , μερίσματα, P/E κ.λπ. σε βασικά στοιχεία δεικτών και λίστες παρακολούθησης χρηστών.<br><br>
             </h2></div>
             
             <h3>Κατεβάστε την εφαρμογή επιλέγοντας την συσκευή/ες σας:</h3><br>
@@ -129,7 +169,7 @@
             <a href="ms-windows-store://pdp/?ProductId=9P7R15NSPZ5P" target="Microsoft Store">
                 <img style="width:200px;height: auto;margin-bottom: 20px;margin-top: 20px;" src="../images2/stores/ms.png" alt="Microsoft Store"  draggable="false">
             </a>
-            <h3>macOS - 10.15 or later</h3>
+            <h3>macOS - 10.15 ή νεότερο</h3>
             <a href="https://apps.apple.com/us/app/ztrade-plus/id786146883" target="App Store">
                 <img style="width:250px;height: auto;margin-bottom: 20px;margin-top: 20px;" src="../images2/stores/mc.png" alt="Mac App Store"  draggable="false">
             </a>

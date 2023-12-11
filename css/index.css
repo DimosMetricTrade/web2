@@ -737,12 +737,32 @@ z-index: 1; /* Ensure the overlay is on top */
         margin-top:0px;
         margin-right:0px;
     }
+    .gallery-img {
+        max-width: 800px;
+        height: auto;
+        transition: transform 0.3s ease-in-out;
+        border-radius: 5px;
+    }
+    
     
 }
 
 @media (max-width: 800px) {
     .rounded-box-all {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 900px) {
+    .gallery-img {
+        max-width: 600px;
+        height: auto;
+    }
+}
+@media (max-width: 700px) {
+    .gallery-img {
+        max-width: 450px;
+        height: auto;
     }
 }
 
