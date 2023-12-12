@@ -125,69 +125,46 @@ body{
     display: none;
 }
 
-.home{ 
-    width: 100%;
+.home{
+    width: 100vw;
+    background-image: url(../images2/sky.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+    padding: 0 1rem;
+    position: relative;
+    overflow: hidden !important;
 }
 
 .rounded-box {
-    flex: 1;
-    border-radius: 20px;
-    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-bottom: 200px;
     padding: 20px;
-    box-sizing: border-box;
-    color: rgb(255, 255, 255);
+    text-align: center;
 }
 
-.left-box {
+.rounded-box2 {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
     margin-top: 100px;
-    margin-left: 200px;
-    margin-right: 50px;
-    background-color: white;
-    width: 200px; /* Set your desired width */
-    height: 860px; /* Set your desired height */
+    margin-bottom: 100px;
+    padding: 10px;
+    text-align: center;
 }
-
-.right-box {
-    margin-top: 100px;
-    margin-left: 50px;;
-    margin-right: 200px;
-    background-color: white;
+.rounded-box7 {
+    width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    width: 200px; /* Set your desired width */
-    height: 860px; /* Set your desired height */
+    border-radius: 45px;
 }
 
-@media (max-width: 1900px) {
-    .left-box,
-    .right-box {
-        width: 200px;
-        margin-top: 100px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-  }
-
-@media (max-width: 1200px) {
-    .home {
-      flex-direction: column; /* Stack boxes vertically */
-    }
-    .left-box{
-        align-self: center;
-        width: 400px;
-        max-height: 350px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .right-box {
-        align-self: center;
-        width: 400px;
-        max-height: 450px;
-        height: 200px;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-bottom: 150px;
-    }
-  }
 
 .styled-image{
     width: 1500px;
@@ -269,6 +246,9 @@ body{
         width:500px;
         height:auto;
     }
+    .home{
+        min-height: 140vh;
+    }
     .image-with-text-container {
         padding-left: 20px;
         padding-right: 20px;
@@ -283,15 +263,15 @@ body{
         width: 100px; 
         height: auto; 
         margin-top: 0px;
-        margin-right: 0px;
-        margin-left: 0px; 
-        margin-bottom: 10px;
+        margin-right: 0px; /* Remove right margin on small screens */
+        margin-left: 0px; /* Remove right margin on small screens */
+        margin-bottom: 10px; /* Add bottom margin to separate image and text */
     }
     .text-container {
-        margin-right: 0px; 
-        margin-left: 0px; 
+        margin-right: 0px; /* Remove right margin on small screens */
+        margin-left: 0px; /* Remove right margin on small screens */
         margin-top: 0px;
-        max-width: 100%; 
+        max-width: 100%; /* Take full width on small screens */
     }
 }
 
@@ -299,42 +279,20 @@ body{
     width: 70%;
     padding: 20px;
 }
-
-.home img {
-    display: block;
-    width:200px;
-    height: auto;
-    margin: 0 auto 30px;
-}
 .home h1{
-    padding-top: 60px;
     color: #000000;
-    font-size: 7rem;
-    text-align: center;
+    font-size: 5.5rem;
 }
 
 .home h2{
     color: #000000;
-    font-size: 1.7rem;
-    text-align: left;
-}
-.home h3{
-    color: #000000;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 .home h3{
     color: #000000;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
-}
-.rounded-box7 {
-    width: 500px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 45px;
 }
 
 .home .wave{
@@ -367,68 +325,6 @@ body{
     100%{
         background-position-x: 100rem;
     }
-}
-
-.home2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.rounded-video {
-    display: block; /* Set the display property to block */
-    width: 1200px; /* Set the width of the video */
-    height: auto; /* Set the height of the video */
-    border-radius: 10px;
-}
-
-.login-container {
-    width: 300px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.login-container h2 {
-    text-align: center;
-}
-
-.login-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    margin-bottom: 1.7rem;
-}
-
-.form-group input {
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.login-button {
-    background-color: #5da2e6;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.login-button:hover {
-    background-color: #0030b5;
 }
 
 
@@ -624,6 +520,7 @@ body{
 .column {
     flex: 0 1 calc(30% - 30px); /* Adjusted flex property and added calc to include margin */
     text-align: left;
+    padding: 100px;
     margin: 30px;
 }
 
