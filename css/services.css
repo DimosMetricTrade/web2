@@ -172,6 +172,7 @@ body{
 }
 
 .text-container h5 {
+    padding-top: 100px;
     padding-left: 20px;
     font-size: 5.5rem;
     text-decoration: underline;
