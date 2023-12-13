@@ -108,11 +108,6 @@ body{
     color: #fff;
 }
 
-.header .navbar ul li a:hover{
-    color: #000000;
-    text-decoration: underline;
-}
-
 .header .logo i{
     padding: 0.5rem;
 }
