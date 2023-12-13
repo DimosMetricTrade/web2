@@ -127,7 +127,7 @@ body{
 .home{
     min-height: 100vh;
     width: 100vw;
-    background-image: url(../img/bg.jpg);
+    background-image: url(../img/backgrounds/bg.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -201,7 +201,7 @@ body{
     left: 0;
     height: 11rem;
     width: 100%;
-    background: url(../img/wave.png);
+    background: url(../img/waves/wave.png);
     background-size: 100rem 11rem;
     animation: waves 8s linear infinite;
     background-repeat: repeat-x;
@@ -233,7 +233,7 @@ body{
     left: 0;
     height: 11rem;
     width: 100%;
-    background: url(../img/wave2.png);
+    background: url(../img/waves/wave2.png);
     background-size: 100rem 11rem;
     animation: waves 8s linear infinite;
     background-repeat: repeat-x;
@@ -485,7 +485,7 @@ z-index: 1; /* Ensure the overlay is on top */
 .aboutus {
     text-align: center;
     margin: 0 auto;
-    background-image: url(../img/compass2.png);
+    background-image: url(../img/backgrounds/compass.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -569,7 +569,7 @@ z-index: 1; /* Ensure the overlay is on top */
 .clients2{
     text-align: center;
     align-items: center;
-    background-image: url(../img/sky.png);
+    background-image: url(../img/backgrounds/sky.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -877,7 +877,7 @@ z-index: 1; /* Ensure the overlay is on top */
 .map{
     text-align: center;
     align-items: center;
-    background-image: url(../img/skyscrappers.png);
+    background-image: url(../img/backgrounds/sky.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
