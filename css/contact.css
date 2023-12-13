@@ -126,7 +126,6 @@ body{
 }
 
 .home{
-    width: 100vw;
     background-image: url(../img/backgrounds/sky.png);
     background-size: cover;
     display: flex;
@@ -150,13 +149,26 @@ body{
 
 .rounded-box2 {
     background-color: rgba(255, 255, 255, 1);
+    width: 850px;
+    height: 600px;
     border-radius: 10px;
-    margin-top: 100px;
     margin-bottom: 100px;
     padding: 10px;
     text-align: center;
 }
 
+@media (max-width: 1000px) {
+    .rounded-box2 {
+        width: 500px;
+        height: 300px;
+    }
+}
+@media (max-width: 750px) {
+    .rounded-box2 {
+        width: 430px;
+        height: 200px;
+    }
+}
 
 .styled-image{
     width: 1500px;
@@ -237,9 +249,6 @@ body{
     .styled-image{
         width:500px;
         height:auto;
-    }
-    .home{
-        min-height: 140vh;
     }
     .image-with-text-container {
         padding-left: 20px;

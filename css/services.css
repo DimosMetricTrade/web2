@@ -222,18 +222,25 @@ body{
         left: 50%; /* Center the container horizontally */
     }
     .fixed-image {
-        width: 300px; 
+        width: 500px; 
         height: auto; 
-        margin-top: 0px;
-        margin-right: 0px; /* Remove right margin on small screens */
-        margin-left: 0px; /* Remove right margin on small screens */
-        margin-bottom: 10px; /* Add bottom margin to separate image and text */
+        margin-top: 70px;
+        margin-right: 0px;
+        margin-left: 0px; 
+        margin-bottom: 10px;
     }
     .text-container {
         margin-right: 0px; /* Remove right margin on small screens */
         margin-left: 0px; /* Remove right margin on small screens */
         margin-top: 0px;
         max-width: 100%; /* Take full width on small screens */
+    }
+}
+
+@media (max-width: 800px) {
+    .fixed-image {
+        width: 300px; 
+        height: auto; 
     }
 }
 

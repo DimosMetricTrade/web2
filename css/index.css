@@ -86,7 +86,7 @@ body{
 }
 
 .header .logo img{
-    width: 130%;
+    width: auto;
     height: 3rem;
     top: 0;
     left: 0;
@@ -632,7 +632,7 @@ z-index: 1; /* Ensure the overlay is on top */
 
 @media (max-width: 800px) {
     .clients2 img{
-        max-width: 150px;
+        max-width: 200px;
         padding: 20px 30px 20px 30px;
     }
 }  
