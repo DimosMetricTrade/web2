@@ -770,7 +770,7 @@ z-index: 1; /* Ensure the overlay is on top */
         flex-direction: column;
     }
     .home img.second-image {
-        max-width: 200px;
+        max-width: 250px;
     }
 }
 
@@ -859,8 +859,6 @@ z-index: 1; /* Ensure the overlay is on top */
     border-radius: 45px;
 }
 .rounded-box9 {
-    background-color: pink;
-    opacity: 0.8;
     margin: auto;
     display: flex;
     justify-content: center;
