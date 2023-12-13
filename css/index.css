@@ -512,6 +512,17 @@ z-index: 1; /* Ensure the overlay is on top */
 .aboutus p{
     margin-top: 1rem;
     font-size: 1.7rem;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+@media (max-width: 1500px) {
+    .aboutus p{
+        margin-top: 1rem;
+        font-size: 1.7rem;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }
 
 .columns {
@@ -620,12 +631,12 @@ z-index: 1; /* Ensure the overlay is on top */
     display: flex;
     justify-content: center;
 }
-@media (max-width: 1250px) {
+@media (max-width: 1150px) {
     .container {
         display: block; 
     }
     .clients2 img{
-        max-width: 200px;
+        max-width: 250px;
         padding: 20px 30px 20px 30px;
     }
 }  
