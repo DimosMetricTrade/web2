@@ -76,7 +76,7 @@ body{
 .header{
     display: flex;
     align-items: center;
-    background-color: #5da2e6;
+    background-color: gray;
     justify-content: space-between;
     width: 100%;
     padding: 1rem 2rem;
@@ -126,7 +126,7 @@ body{
 }
 
 .home{
-    background-image: url(../img/backgrounds/sky.png);
+    background-color: #266593;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -136,38 +136,6 @@ body{
     padding: 0 1rem;
     position: relative;
     overflow: hidden !important;
-}
-
-.rounded-box {
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    margin-top: 100px;
-    margin-bottom: 200px;
-    padding: 20px;
-    text-align: center;
-}
-
-.rounded-box2 {
-    background-color: rgba(255, 255, 255, 1);
-    width: 850px;
-    height: 600px;
-    border-radius: 10px;
-    margin-bottom: 100px;
-    padding: 10px;
-    text-align: center;
-}
-
-@media (max-width: 1000px) {
-    .rounded-box2 {
-        width: 500px;
-        height: 300px;
-    }
-}
-@media (max-width: 750px) {
-    .rounded-box2 {
-        width: 430px;
-        height: 200px;
-    }
 }
 
 .styled-image{
@@ -287,45 +255,87 @@ body{
 }
 
 .home h2{
-    color: #000000;
+    color: #ffffff;
     font-size: 2rem;
-    text-align: center;
+    text-align: left;
 }
 .home h3{
-    color: #000000;
+    color: #ffffff;
     font-size: 1.7rem;
-    text-align: center;
+    text-align: left;
+}
+.text-box {
+    border: 1px solid #ccc; /* Add a border */
+    padding: 10px; /* Add some padding */
+    max-width: 300px; /* Set a fixed width */
+    margin: 20px; /* Add some margin for spacing */
 }
 
-.home .wave{
-    position: absolute;
-    bottom: -.5rem;
-    left: 0;
-    height: 11rem;
-    width: 100%;
-    background: url(../img/waves/wave2.png);
-    background-size: 100rem 11rem;
-    animation: waves 8s linear infinite;
-    background-repeat: repeat-x;
+.expandable-box {
+    font-size: 2rem;
+    background-color: #FFA500;
+    cursor: pointer;
+    transition: max-height 0.8s ease; /* Add transition effect on max-height change */
+    overflow: hidden; /* Hide the content that exceeds the box */
+    border-radius: 4px;
 }
 
-.home .wave2{
-    animation-direction: reverse;
-    animation-duration: 6s;
-    opacity: .2;
+.expanded-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease; /* Add transition effect on max-height change */
+    padding: 10px;
+    margin-top: 10px;
+    align-items: left;
+    font-size: 1.7rem;
 }
 
-.home .wave3{
-    animation-duration: 4s;
-    opacity: .5;
+.content-container {
+    display: none;
+    margin-bottom: 20px;
 }
 
-@keyframes waves{
-    0%{
-        background-position-x: 0;
-    }
-    100%{
-        background-position-x: 100rem;
+.button-container {
+    display: flex;
+}
+.button:hover {
+    background-color: gray; /* Background color on hover, you can change this */
+}
+
+.button {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    width: 100px;
+    outline: none;
+    height: 50px;
+    flex: 1;
+    margin: 5px;
+    font-size: 2rem;
+    border: none; /* Remove the border */
+    border-radius: 4px; /* Adjust the radius to make it more or less rounded */
+}
+
+.button.active-button {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+}
+
+#div2 {
+    display: block; 
+}
+
+.rounded-box {
+    background-color: #7b8185; /* Blue color, you can change this */
+    border-radius: 5px; /* Adjust the radius to make it more or less rounded */
+    padding: 20px;
+    color: #fff;
+    width: 900px;
+}
+
+@media (max-width: 1000px) {
+    .rounded-box {
+        width: 500px;
     }
 }
 
@@ -693,7 +703,7 @@ body{
 }
 
 .footer {
-    background-color: #5da2e6;   
+    background-color: gray;   
     padding: 20px;
     text-align: center;
 }

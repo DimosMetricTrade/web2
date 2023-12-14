@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../img/favicon/empty.png" type="image/gif">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetricTrade - Οδηγίες Χρήσης</title>
+    <link rel="stylesheet" href="../css/help.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="icon" href="../images/image.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <script src="../js/function.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="../el/index.html" class="logo"><img src="../img/logo2.png" alt=""></a>
+        <div class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../en/contact.html" title="Set language to English">EN</a></li>
+                <li><a href="../el/index.html">Αρχική</a></li>
+                <li><a href="../el/services.html">Υπηρεσίες</a></li>
+                <li><a href="../el/company.html">Εταιρία</a></li>
+                <li><a href="../el/contact.html">Επικοινωνία</a></li>
+                <li><a href="../el/install.html">Εγκατάσταση</a></li>
+                <li><a href="../el/account.html">Συνδρομή</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="home">
+        <br><br><br><br><br><br>
+
+        <div class="button-container">
+            <button class="button" onclick="showContent('div1', this)">Εκδόσεις</button>
+            <button class="button" onclick="showContent('div2', this)">Κινητά</button>
+            <button class="button" onclick="showContent('div3', this)">Button 3</button>
+        </div>
+        
+
+        <div class="content-container" id="div1">
+            <div class="rounded-box">
+            <h2>Εκδόσεις και Εγκατάσταση</h2>
+            <h3>
+                Η εφαρμογή λειτουργεί ως εφαρμογή καταστήματος (store application) στα νέα λειτουργικά συστήματα, ενώ για παλαιότερες εκδόσεις Windows ή Macos, 
+                ή λειτουργικά Linux πρέπει να εγκατασταθεί η πλατφόρμα Java για να λειτουργήσει.<br><br>
+                Οι εφαρμογές καταστήματος έχουν σημαντικά πλεονεκτήματα ασφάλειας και λειτουργικότητας ενώ προσφέρουν στο χρήστη ενιαίο απλό 
+                τρόπο εγκατάστασης, ενημερώσεων, ανοίγματος και κατάργησης για όλες τις εφαρμογές της κατηγορίας αυτής. <br><br>
+                Μεταξύ άλλων ελέγχονται από τους κατασκευαστές του λειτουργικού συστήματος και διανέμονται από αυτούς, 
+                αφού έχουν περιορισθεί τα δικαιώματα τους στα λειτουργικώς απαραίτητα (σύνδεση internet ως πελάτη, εκτύπωση κλπ).<br><br>
+                Τόσο οι επιτραπέζιες εκδόσεις όσο και οι εκδόσεις για κινητά έχουν ακριβώς τις ίδιες δυνατότητες και τρόπο λειτουργίας. <br><br>
+                Η μόνη διαφορά έγκειται στον αριθμό των παραθύρων που μπορούν να εμφανίζονται ταυτόχρονα και στον τρόπο οργάνωσης τους.<br><br>
+            </h3>
+            <div class="expandable-box" onclick="toggleContent('section1')">
+                <h2>&emsp;Υποστηριζόμενα λειτουργικά συστήματα</h2>
+            </div>
+        
+            <div class="expanded-content" id="section1">
+                <h3>
+                Window Store για συσκευές Windows 10 ή 11<br>
+                Mac App Store για συσκευές Macos 10.15 ή νεότερες<br>
+                Google Play για συσκευές Android 5 ή νεότερες<br>
+                App Store για συσκευές IOS 9 ή νεότερες<br>
+            </h3>
+            </div>
+
+
+        </div>
+        </div>
+        
+    
+
+<script>
+    function toggleContent(sectionId) {
+        var expandedContent = document.getElementById(sectionId);
+        var expandableBox = document.querySelector('.expandable-box');
+
+        if (expandedContent.style.maxHeight) {
+            expandedContent.style.maxHeight = null;
+        } else {
+            expandedContent.style.maxHeight = expandedContent.scrollHeight + "px";
+        }
+    }
+</script>
+
+</section>
+</body>
+<script>
+    // Show div1 and make Button 1 active by default
+    document.getElementById('div1').style.display = 'block';
+    document.querySelector('.button').classList.add('active-button');
+
+    function showContent(divId, button) {
+        // Hide all divs
+        var divs = document.querySelectorAll('.content-container');
+        divs.forEach(function(div) {
+            div.style.display = 'none';
+        });
+
+        // Show the selected div
+        var selectedDiv = document.getElementById(divId);
+        selectedDiv.style.display = 'block';
+
+        // Remove the active class from all buttons
+        var buttons = document.querySelectorAll('.button');
+        buttons.forEach(function(btn) {
+            btn.classList.remove('active-button');
+        });
+
+        // Add the active class to the clicked button
+        button.classList.add('active-button');
+    }
+</script>
+
+</html>
