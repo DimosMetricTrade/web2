@@ -272,24 +272,19 @@ body{
 }
 
 .expandable-box {
-    font-size: 2rem;
-    background-color: #FFA500;
     cursor: pointer;
-    transition: max-height 0.8s ease; /* Add transition effect on max-height change */
-    overflow: hidden; /* Hide the content that exceeds the box */
+    background-color: #FFA500;
     border-radius: 4px;
+
+    /* Add other styles as needed */
 }
 
 .expanded-content {
-    max-height: 0;
     overflow: hidden;
-    transition: max-height 0.8s ease; /* Add transition effect on max-height change */
-    padding: 10px;
-    margin-top: 10px;
-    align-items: left;
-    font-size: 1.7rem;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+    /* Add other styles as needed */
 }
-
 .content-container {
     display: none;
     margin-bottom: 20px;
@@ -321,7 +316,7 @@ body{
     border: none;
 }
 
-#div2 {
+#div1 {
     display: block; 
 }
 
