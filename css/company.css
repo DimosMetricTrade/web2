@@ -692,6 +692,16 @@ body{
     height: 20px; 
 }
 
+.image-card{
+    width: 500px;
+}
+
+@media (max-width: 768px) {
+    .image-card{
+        width: 300px;
+    }
+}
+
 @media (max-width: 768px) {
     .footer p{
         margin-right: 0;
