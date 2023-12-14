@@ -673,6 +673,25 @@ body{
     margin-right: 500px;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 1px;
+    
+}
+
+.grid-item {
+    font-size: 1.7rem;
+    border: 1px solid #ddd; 
+    padding: 5px;
+    text-align: center;
+}
+
+.button img {
+    width: 20px; 
+    height: 20px; 
+}
+
 @media (max-width: 768px) {
     .footer p{
         margin-right: 0;

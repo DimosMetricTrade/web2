@@ -38,7 +38,6 @@
     </header>
     <section id="home" class="home">
         <div class="image-with-text-container">
-            <img src="../img/logo.png" alt="Fixed Image" class="fixed-image">
             <div class="text-container">
                 <br><br><br><br><br><br><br><br><br><br>
                 <h5>Our Company</h5>
@@ -68,6 +67,101 @@
 
         <div class="image-with-text-container">
             <div class="text-container">
+                <h5>Payment Methods</h5><br>
+                <p><b>Credit/Debit Cards</b><br>
+                    You can renew your subscription via credit, debit and prepaid cards of Visa, Mastercard, Maestro, American Express and Diners Club.<br><br>
+                    <img src="../img/allcards.png" alt="cards" class="styled-image" style="width: 300px;"><br><br>
+                    
+                    To update your card information, please visit the <a href="../en/account.html">account</a> page and log in with your username and password.<br>
+                    All payments made using a card are processed through the electronic payment platform "Nexi e-Commerce" 
+                    and uses TLS 1.2 encryption with a 128-bit encryption protocol (Secure Sockets Layer - SSL). 
+                    Encryption is a way of encoding information until it reaches its intended recipient, 
+                    who will be able to decode it using the appropriate key.<br><br>
+                    <b>Cancellation / Return Policy</b><br>
+                    If you have selected automatic recurring billing of your card, you can select "Cancel recurring billing" from the "My subscription" page to stop the automatic billing. 
+                    Please make sure to cancel at least 10 days before the next charge, as the cancellation process takes a few days to finalize.<br>
+                    We recommend that you use the app trial before purchasing a subscription, 
+                    as you cannot cancel a non-recurring subscription. You can only add or upgrade products to an 
+                    active subscription. If there are less than 10 days left until the end or the subscription has expired, 
+                    you can renew the subscription with any add-remove products.<br>
+                    For any other case you can contact us by email at: 
+                    <a href="mailto:support@metrictrade.com?subject=Subject%20Text&body=Body%20Text"style="color: #5da2e6; text-decoration: none;text-decoration: underline;">support@metrictrade.com</a>.
+                </p>
+                <p><b> Bank accounts</b><br>
+                    If you canot use your card, you can deposit your subscription to the following bank accounts.<br>
+                    Due to the transaction fees charged to the accounts the minimum deposit must correspond to at least a <b>3</b> month subscription.<br>
+                    Please include your <b>name</b> and the <b>username</b> you have been assigned in the deposit details.<br>
+                    <br>
+                    <p style="text-align: center;">
+                        <div class="grid-container">
+                            <!-- Grid items (text boxes) -->
+                            <div class="grid-item" style="text-align: right;">Beneficiary of Accounts</div>
+                            <div class="grid-item" style="text-align: left;">METRICTRADE ΕΠΕ</div>
+                            <div class="grid-item" style="text-align: right;"></div>
+                            <div class="grid-item" style="text-align: left;">Mitropoleos 19</div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item" style="text-align: left;">54624 Thessaloniki</div>
+                            <div class="grid-item" style="text-align: right;">Bank</div>
+                            <div class="grid-item" style="text-align: left;">IBAN Number</div>
+                            <div class="grid-item" style="text-align: right;"><b>ALPHA BANK</b></div>
+                            <div class="grid-item" style="text-align: left;">GR9501407000700002320002740&emsp;
+                                <button class="button" onclick="myFunctionAlpha()"><img src="..\img\copy.png" alt="Copy"></button>
+                            </div>
+                            <div class="grid-item" style="text-align: right;"><b>OPTIMA BANK</b></div>
+                            <div class="grid-item" style="text-align: left;">GR490340001000007V228027197&emsp;&nbsp;
+                                <button class="button" onclick="myFunctionOptima()"><img src="..\img\copy.png" alt="Copy"></button>
+                            </div>
+                            <div class="grid-item" style="text-align: right;"><b>PIRAEUS BANK</b></div>
+                            <div class="grid-item" style="text-align: left;">GR9801722150005215037170181&emsp;&emsp;&nbsp;&nbsp;
+                                <button class="button" onclick="myFunctionPiraeus()"><img src="..\img\copy.png" alt="Copy"></button>
+                            </div>
+                        </div>
+                    </p>
+                </p>
+            </div>
+        </div>
+        <script>
+            function myFunctionAlpha() {
+              var copyText = "GR9501407000700002320002740";
+              var tempTextarea = document.createElement("textarea");
+              tempTextarea.value = copyText;
+              document.body.appendChild(tempTextarea);
+              tempTextarea.select();
+              tempTextarea.setSelectionRange(0, 99999);
+              document.execCommand("copy");
+              document.body.removeChild(tempTextarea);
+              alert("Copied the IBAN of Alpha Bank");
+            }
+        </script>
+        <script>
+            function myFunctionOptima() {
+              var copyText = "GR490340001000007V228027197";
+              var tempTextarea = document.createElement("textarea");
+              tempTextarea.value = copyText;
+              document.body.appendChild(tempTextarea);
+              tempTextarea.select();
+              tempTextarea.setSelectionRange(0, 99999);
+              document.execCommand("copy");
+              document.body.removeChild(tempTextarea);
+              alert("Copied the IBAN of Optima Bank");
+            }
+        </script>
+        <script>
+            function myFunctionPiraeus() {
+              var copyText = "GR9801722150005215037170181";
+              var tempTextarea = document.createElement("textarea");
+              tempTextarea.value = copyText;
+              document.body.appendChild(tempTextarea);
+              tempTextarea.select();
+              tempTextarea.setSelectionRange(0, 99999);
+              document.execCommand("copy");
+              document.body.removeChild(tempTextarea);
+              alert("Copied the IBAN of Piraeus Bank");
+            }
+        </script>
+
+        <div class="image-with-text-container">
+            <div class="text-container">
                 <h5>Terms of Services</h5><br>
                 <p><b>Disclaimer</b><br>
                     Data and other information are considered reliable, but MetricTrade does not represent that the Content (including information obtained from third-party sources) 
@@ -82,7 +176,6 @@
                     If you do not agree to any of these terms, or the Privacy Policy, you must do not use our Services.<br>
                 </p>
             </div>
-            <img src="../img/empty.png" alt="Fixed Image" class="fixed-image">
         </div>
 
         <div style="padding-bottom: 70px;"class="image-with-text-container">
@@ -102,7 +195,6 @@
                      Data are deleted ten years after the end of the trading relationship or after your request.<br><br><br><br>
                 </p>
             </div>
-            <img src="../img/empty.png" alt="Fixed Image" class="fixed-image">    
         </div>
         
     <div class="wave wave1"></div>
