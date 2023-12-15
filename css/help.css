@@ -126,7 +126,7 @@ body{
 }
 
 .home{
-    background-color: #266593;
+    background-color: rgb(47, 65, 122);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -256,13 +256,21 @@ body{
 
 .home h2{
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: left;
 }
 .home h3{
     color: #ffffff;
     font-size: 1.7rem;
     text-align: left;
+}
+
+.home h4{
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: left;
+    padding-left: 5px;
+    padding-top: 5px;
 }
 .text-box {
     border: 1px solid #ccc; /* Add a border */
@@ -275,8 +283,14 @@ body{
     cursor: pointer;
     background-color: #FFA500;
     border-radius: 4px;
+    min-height: 40px;
+}
 
-    /* Add other styles as needed */
+.expandable-box2 {
+    cursor: pointer;
+    background-color: #FFA500;
+    border-radius: 4px;
+    min-height: 30px;
 }
 
 .expanded-content {
@@ -285,6 +299,98 @@ body{
     transition: max-height 0.3s ease-out;
     /* Add other styles as needed */
 }
+
+.exp-img{
+    width: 500px;
+    align-self: ceneter;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+    .exp-img{
+        width: 300px;
+    }
+}
+
+.exp-img2{
+    width: 800px;
+    align-self: ceneter;
+    display: block;
+    margin: 0 auto;
+}
+@media (max-width: 1000px) {
+    .exp-img2{
+        width: 350px;
+    }
+}
+
+.exp-img3{
+    width: 400px;
+    align-self: ceneter;
+    display: block;
+    margin: 0 auto;
+}
+@media (max-width: 1000px) {
+    .exp-img3{
+        width: 300px;
+    }
+}
+
+.exp-img4{
+    width: 300px;
+    align-self: ceneter;
+    display: block;
+    margin: 0 auto;
+}
+@media (max-width: 1000px) {
+    .exp-img4{
+        width: 150px;
+    }
+}
+
+.exp-img5{
+    width: 400px;
+    align-self: ceneter;
+    display: block;
+    margin: 0 auto;
+}
+@media (max-width: 1000px) {
+    .exp-img5{
+        width: 350px;
+    }
+}
+
+.exp-img6{
+    width: 800px;
+    align-self: ceneter;
+    display: block;
+    margin: 0 auto;
+}
+@media (max-width: 1000px) {
+    .exp-img6{
+        width: 150px;
+    }
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.container2 {
+    display: flex;
+    align-items: flex-start;
+}
+
+@media (max-width: 1000px) {
+    .container2 {
+        display: flex;
+        align-items: center; /* Center items vertically */
+        flex-direction: column; /* Stack items vertically */
+      }
+}
+
 .content-container {
     display: none;
     margin-bottom: 20px;
@@ -292,6 +398,17 @@ body{
 
 .button-container {
     display: flex;
+}
+
+@media (max-width: 1000px) {
+    .button-container {
+        display: flex;
+        flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+      }
+  
+      .button {
+        flex-basis: 100px; /* Two buttons in each line with some spacing */
+      }
 }
 .button:hover {
     background-color: gray; /* Background color on hover, you can change this */
@@ -303,6 +420,7 @@ body{
     width: 100px;
     outline: none;
     height: 50px;
+    width: 150px;
     flex: 1;
     margin: 5px;
     font-size: 2rem;
@@ -316,7 +434,7 @@ body{
     border: none;
 }
 
-#div1 {
+#div11 {
     display: block; 
 }
 
@@ -325,12 +443,17 @@ body{
     border-radius: 5px; /* Adjust the radius to make it more or less rounded */
     padding: 20px;
     color: #fff;
-    width: 900px;
+    width: 1000px;
 }
 
 @media (max-width: 1000px) {
     .rounded-box {
         width: 500px;
+    }
+}
+@media (max-width: 800px) {
+    .rounded-box {
+        width: 400px;
     }
 }
 
