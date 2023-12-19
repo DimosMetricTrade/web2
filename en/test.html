@@ -1,0 +1,50 @@
+
+<img src="../img/hist.png" alt="Thumbnail" id="thumbnail" onclick="openFullscreen()">
+
+<!-- Fullscreen container -->
+<div id="fullscreen-container" onclick="closeFullscreen()">
+    <!-- Fullscreen image -->
+    <img src="../img/hist.png" alt="Fullscreen" id="fullscreen-image">
+</div>
+
+<script>
+    function openFullscreen() {
+        var fullscreenContainer = document.getElementById('fullscreen-container');
+        var fullscreenImage = document.getElementById('fullscreen-image');
+
+        // Set the source of the fullscreen image
+        fullscreenImage.src = "../img/hist.png";
+
+        // Display the fullscreen container
+        fullscreenContainer.style.display = 'flex';
+
+        // Enter fullscreen mode
+        if (fullscreenContainer.requestFullscreen) {
+            fullscreenContainer.requestFullscreen();
+        } else if (fullscreenContainer.mozRequestFullScreen) { /* Firefox */
+            fullscreenContainer.mozRequestFullScreen();
+        } else if (fullscreenContainer.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+            fullscreenContainer.webkitRequestFullscreen();
+        } else if (fullscreenContainer.msRequestFullscreen) { /* IE/Edge */
+            fullscreenContainer.msRequestFullscreen();
+        }
+    }
+
+    function closeFullscreen() {
+        var fullscreenContainer = document.getElementById('fullscreen-container');
+
+        // Exit fullscreen mode
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.mozCancelFullScreen) { /* Firefox */
+            document.mozCancelFullScreen();
+        } else if (document.webkitExitFullscreen) { /* Chrome, Safari & Opera */
+            document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) { /* IE/Edge */
+            document.msExitFullscreen();
+        }
+
+        // Hide the fullscreen container
+        fullscreenContainer.style.display = 'none';
+    }
+</script>
