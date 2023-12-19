@@ -86,12 +86,11 @@ body{
 }
 
 .header .logo img{
-    width: auto;
+    width: 130%;
     height: 3rem;
     top: 0;
     left: 0;
 }
-
 .header .navbar ul{
     list-style-type: none;
     display: flex;
