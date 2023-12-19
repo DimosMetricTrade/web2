@@ -76,7 +76,7 @@ body{
 .header{
     display: flex;
     align-items: center;
-    background-color: gray;
+    background-color: #2b3e50;
     justify-content: space-between;
     width: 100%;
     padding: 1rem 2rem;
@@ -85,6 +85,7 @@ body{
     left: 0;
     z-index: 100;
     position: fixed;
+    outline: none;
 }
 
 .header .logo img{
@@ -111,7 +112,6 @@ body{
 }
 
 .header .navbar ul li a:hover{
-    color: #000000;
     text-decoration: underline;
 }
 .header .logo i{
@@ -125,8 +125,39 @@ body{
     display: none;
 }
 
+#back-to-top {
+    position: fixed;
+    display: none;
+    background-color: #FF8C00;
+    color: #ffffff;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 44px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.3s;
+    z-index: 9;
+    border: none; /* Remove border */
+    border-radius: 0; /* Remove border-radius */
+}
+
+#back-to-top:focus {
+    outline: none;
+}
+
+@media (max-width: 1050px){
+    #back-to-top {
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+
 .home{
-    background-color: rgb(47, 65, 122);
+    background-color: #2b3e50;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -271,6 +302,7 @@ body{
     text-align: left;
     padding-left: 5px;
     padding-top: 5px;
+    padding-bottom: 5px;
 }
 .text-box {
     border: 1px solid #ccc; /* Add a border */
@@ -281,14 +313,13 @@ body{
 
 .expandable-box {
     cursor: pointer;
-    background-color: #FFA500;
+    background-color: #FF8C00;
     border-radius: 4px;
-    min-height: 40px;
 }
 
 .expandable-box2 {
     cursor: pointer;
-    background-color: #FFA500;
+    background-color: #FF8C00;
     border-radius: 4px;
     min-height: 30px;
 }
@@ -305,6 +336,7 @@ body{
     align-self: ceneter;
     display: block;
     margin: 0 auto;
+    border-radius: 2px;
 }
 
 @media (max-width: 1000px) {
@@ -318,6 +350,7 @@ body{
     align-self: ceneter;
     display: block;
     margin: 0 auto;
+    border-radius: 5px;
 }
 @media (max-width: 1000px) {
     .exp-img2{
@@ -330,6 +363,7 @@ body{
     align-self: ceneter;
     display: block;
     margin: 0 auto;
+    border-radius: 1px;
 }
 @media (max-width: 1000px) {
     .exp-img3{
@@ -354,6 +388,7 @@ body{
     align-self: ceneter;
     display: block;
     margin: 0 auto;
+    border-radius: 2px;
 }
 @media (max-width: 1000px) {
     .exp-img5{
@@ -366,6 +401,7 @@ body{
     align-self: ceneter;
     display: block;
     margin: 0 auto;
+    border-radius: 2px;
 }
 @media (max-width: 1000px) {
     .exp-img6{
@@ -394,65 +430,102 @@ body{
 .content-container {
     display: none;
     margin-bottom: 20px;
+    transition: opacity 0.5s ease, height 0.5s ease;
 }
 
 .button-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-@media (max-width: 1000px) {
-    .button-container {
-        display: flex;
-        flex-wrap: wrap; /* Allow buttons to wrap to the next line */
-      }
-  
-      .button {
-        flex-basis: 100px; /* Two buttons in each line with some spacing */
-      }
-}
 .button:hover {
-    background-color: gray; /* Background color on hover, you can change this */
+    background-color: #4e5d6c; /* Background color on hover, you can change this */
 }
 
 .button {
     background-color: transparent;
     color: rgb(255, 255, 255);
-    width: 100px;
     outline: none;
     height: 50px;
     width: 150px;
-    flex: 1;
     margin: 5px;
     font-size: 2rem;
-    border: none; /* Remove the border */
+    border: 1px solid white;
     border-radius: 4px; /* Adjust the radius to make it more or less rounded */
 }
+.button:focus {
+    outline: none;
+}
+
+@media (max-width: 1000px) {
+    .button-container {
+        display: flex;
+        flex-wrap: wrap; 
+    }
+}
+
 
 .button.active-button {
-    background-color: #FFA500;
+    background-color: #FF8C00;
     color: white;
     border: none;
 }
 
-#div11 {
+#div1 {
     display: block; 
 }
 
+.empty-lines {
+    margin-bottom: 100px; /* Adjust the margin as needed */
+}
+
 .rounded-box {
-    background-color: #7b8185; /* Blue color, you can change this */
-    border-radius: 5px; /* Adjust the radius to make it more or less rounded */
+    background-color: #7b8185; 
+    border-radius: 5px; 
+    padding: 20px;
+    color: #fff;
+    width: 960px;
+}
+
+.rounded-box2 {
+    background-color: transparent; 
+    border-radius: 5px;     
     padding: 20px;
     color: #fff;
     width: 1000px;
+    align-items: center;
 }
+.rounded-box3 {
+    background-color: transparent; 
+    border-radius: 5px;     
+    color: #fff;
+    width: 1000px;
+}
+
 
 @media (max-width: 1000px) {
     .rounded-box {
         width: 500px;
     }
+    .rounded-box2 {
+        width: 500px;
+    }
+    .rounded-box3 {
+        width: 500px;
+    }
+
 }
 @media (max-width: 800px) {
     .rounded-box {
+        width: 400px;
+    }
+    .rounded-box2 {
+        width: 400px;
+    }
+    .rounded-box3 {
         width: 400px;
     }
 }
